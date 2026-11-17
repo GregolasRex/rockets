@@ -1,0 +1,8 @@
+kill all camera processes
+killall rpicam-vid
+
+see what process is using the camera
+sudo fuser -v /dev/video0
+
+kill any processes using the socket
+sudo fuser -k 8000/tcp

@@ -1,0 +1,15 @@
+see the adapters
+lsusb
+ip link show
+
+turn off power save
+sudo iw dev wlan1 set power_save off
+
+just shutdown for now
+sudo ip link set wlan0 down
+
+permanent way
+sudo nano /boot/firmware/config.txt
+
+then add line (or remove)
+dtoverlay=disable-wifi

@@ -1,0 +1,1 @@
+rpicam-vid -t 0 --inline --width 1280 --height 720 --framerate 30 --bitrate 2000000 --flush -o udp://10.110.15.1:5000

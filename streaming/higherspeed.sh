@@ -1,0 +1,1 @@
+rpicam-vid -t 0 --inline --width 1280 --height 720 --framerate 30 --codec libav --libav-format mpegts -o udp://10.110.15.1:5000?pkt_size=1316
