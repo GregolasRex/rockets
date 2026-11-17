@@ -1,0 +1,2 @@
+https://raspberrypi.stackexchange.com/questions/62933/set-up-a-raspberry-pi-zero-w-without-monitor-or-ethernet-module
+ssh pi@192.168.1.xxx

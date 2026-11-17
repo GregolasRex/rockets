@@ -1,0 +1,31 @@
+picamera notes
+
+ssh -o ServerAliveInterval=600 username@server_ip_address
+
+from time import time
+from datetime import datetime
+
+greg_datetime = datetime.now()
+
+greg_date = greg_datetime.strftime("%m-%d-%Y:%H-%M-%S")
+#greg_time = greg_datetime.strftime("%m-%d-%Y")
+
+print(greg_date)
+
+live stream documentation
+https://makezine.com/projects/beginner-project-a-remote-viewing-camera-with-raspberry-pi/
+
+#verify camera is connected
+vcgencmd get_camera
+raspistill -o image.jpg
+
+display current altitude? speed? recording duration? 
+position of overlay text?
+camera = picamera.PiCamera()
+camera.resolution = (640, 480)
+camera.framerate = 24
+camera.start_preview()
+camera.annotate_text = ' ' * 31
+for c in itertools.cycle(s):
+    camera.annotate_text = camera.annotate_text[1:31] + c
+    time.sleep(0.1)
